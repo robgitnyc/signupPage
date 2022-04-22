@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Norse-bold";
+    src: url(./Norse-Bold.otf)
+}
+
+:root {
+    font-family: sans-serif;
+}
+#container {
+    display: flex;
+}
+#left-panel {
+    background-image: url("./bigleaf.avif");
+    width: 387px; 
+    height: 580px;
+    flex-shrink: 0;    
+}
+
+#right-panel {
+    height: 580px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-elem {
+    height: 33%;
+}
+
+#right-upper-strip, #right-low-strip  {
+    background-color: rgb(249 250 251);
+    
+}
+#right-mid-strip {
+    height: 44%
+}
+
+.formy {
+
+    border-radius: 4px;
+    flex-basis: 50%;
+
+}
+
+.formy:focus {
+
+    outline-color: rgb(89,109,72);
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+/*
+#table {
+   
+    position:relative;
+    top: 20%;
+    
+    
+}
+.row {
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+}
+*/
+#btn {
+    display: block;
+    margin-top: 30px;
+}
+
+#logo-strip {
+    position: relative;
+    top: 200px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.50);
+    display: flex;
+    color: white;
+    font-size: 3rem;
+/*    justify-content: space-around; */
+    font-family: "Norse-bold", sans-serif;
+    
+    
+}
+#text {
+    margin: auto;
+}
+
+#logo {
+    height: 100%;
+    width: auto; 
+}
+#formcont {
+    margin: auto;
+    padding-top: 5%;
+}
+.row {
+    display: flex;
+    justify-content:space-around;
+    padding: 8px;
+}
+#btn {
+    margin-left: 10%;
+    background-color: rgb(89,109,72);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 4px 4px;
+    font-weight: bold;
+}
+#message {
+    font-size: 0.8rem;
+    min-height: 1.5rem;
+}
+
+#description {
+    position: relative;
+    top: 30%;
+    padding-left: 10%;
+    font-weight: bold;
+
+}
+#already {
+    margin-left: 10%;
+}

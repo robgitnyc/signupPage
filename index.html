@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="left-panel">
+            <div id="logo-strip">
+                <img id="logo" src="./RobNYC-logos_white2.png">
+                <p id="text"> RobNYC Design </p>
+                
+            </div>
+            
+        </div>
+        
+        <div id="right-panel">
+            
+                <div class="right-elem" id="right-upper-strip">
+                    
+                    <p id="description">
+                        This is an imaginary registration form for practice purposes.<br> Sign up and become the Ubermensch!
+                    </p>
+                </div>
+                <div class="right-elem" id="right-mid-strip">
+                    
+                    <div id="formcont">
+                        <form id="formcont2" action="#" method="post">
+                        
+                        <div class="row">
+                            <div class="cell">
+                                <label class="formelem" for="firstName">First Name:</label><br>
+                                <input class="formy formelem" type="text" id="firstName" name="first-name" required>
+                            </div>
+                            <div class="cell">
+                                <label class="formelem" for="lastName">Last Name:</label><br>
+                                <input class="formy formelem" type="text" id="lastName" name="last-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="cell">
+                                <label class="formelem" for="user_email">Your Email:</label><br>
+                                <input class="formy formelem" type="email" id="user_email" name="e-mail" placeholder="your email here" required>
+                            </div>
+                            
+                                <div class="cell">
+                                    <label class="formelem" for="phone_num">Phone Number</label><br>
+                                    <input class="formy formelem" id="phone_num" type="number" name="phone" required>
+                                </div>
+                        </div>
+                        
+                        
+                        <div class="row">
+                            <div class="cell">
+                                <label class="formelem" for="user_password">Password</label><br>
+                                <input class="formy formelem" class="error" id="user_password" type="password" name="user-pass" minlength="8" maxlength="20" required >
+                            </div>
+                                <div class="cell">
+                                    <label class="formelem" for="password_2">Confirm password</label><br>
+                                    <input class="formy formelem" class="error" type="password" id="password_2" name="pass2" required onkeyup='check();'><br>
+                                    <div id='message'></div> 
+                                </div>
+                        </div>                                   
+                   
+                    </div>         
+                    
+                </div>
+                <div class="right-elem" id="right-low-strip">
+                    <button id="btn" class="row" type="submit">Create Account</button>
+                    </form>
+
+                    <p id="already">Already have an account? <a href="#">Log in</a></p>
+                </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
